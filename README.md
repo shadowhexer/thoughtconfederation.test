@@ -1,10 +1,7 @@
 ## Thought Confederation
-A project made for ITE 18
+A project made for ITE 18. All related links related to tutorials or answers can be added below simply by editing this file.
 
-All related links related to tutorials or answers can be added below simply by editing this file.
-
-<b>LINKS</b>
-
+<b>LINKS:</b>
 Upload a local folder to Github using VSCode:
 https://github.com/sailesh307/GitHubTutorial
 
