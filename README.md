@@ -6,7 +6,7 @@ A project made for ITE 18. All related links related to tutorials or answers can
 * Upload a local folder to Github using VSCode: https://github.com/sailesh307/GitHubTutorial
 * Create Virtual Host here: https://ultimatefosters.com/hosting/setup-a-virtual-host-in-windows-with-xampp-server/ 
 * Install Laravel: https://laravel.com/docs/11.x/installation
-* Clone a repository to local machine: (1)https://learn.microsoft.com/en-us/azure/developer/javascript/how-to/with-visual-studio-code/clone-github-repository; (2)https://www.geeksforgeeks.org/how-to-clone-a-project-from-github-using-vscode/
+* Clone a repository to local machine: (1) https://learn.microsoft.com/en-us/azure/developer/javascript/how-to/with-visual-studio-code/clone-github-repository; (2) https://www.geeksforgeeks.org/how-to-clone-a-project-from-github-using-vscode/
 
 
 
