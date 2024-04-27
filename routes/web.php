@@ -48,17 +48,7 @@ Route::get('/sign-in', function()
     return view('sign-in'); 
 })->name('sign-in');
 
-Route::post('/login', 'AuthController@login')->name('login');
-
-/*
-Route::controller(LoginRegisterController::class)->group(function() {
-    Route::get('/sign-up', 'sign-up')->name('sign-up');
-    Route::post('/store', 'store')->name('store');
-    Route::post('/sign-in', 'login')->name('login');
-    Route::post('/authenticate', 'authenticate')->name('authenticate');
-    Route::get('/index', 'index')->name('index');
-    Route::post('/logout', 'logout')->name('logout');
-}); */
+Route::post('/login', 'AuthController@login')->name('login'); // wala pa ni nahuman
 
 // Create_account
 Route::get('/sign-up', function()
