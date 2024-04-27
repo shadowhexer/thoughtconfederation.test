@@ -2,8 +2,10 @@
 A project made for ITE 18. All related links related to tutorials or answers can be added below simply by editing this file.
 
 <b>LINKS:</b>
-Upload a local folder to Github using VSCode:
-https://github.com/sailesh307/GitHubTutorial
+
+Upload a local folder to Github using VSCode: https://github.com/sailesh307/GitHubTutorial
+Create Virtual Host here: https://ultimatefosters.com/hosting/setup-a-virtual-host-in-windows-with-xampp-server/ 
+Install Laravel: https://laravel.com/docs/11.x/installation
 
 
 
