@@ -3,7 +3,7 @@ A project made for ITE 18
 
 All related links related to tutorials or answers can be added below simply by editing this file.
 
-## LINKS
+<b>LINKS</b>
 
 Upload a local folder to Github using VSCode:
 https://github.com/sailesh307/GitHubTutorial
