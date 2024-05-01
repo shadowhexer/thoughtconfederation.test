@@ -19,6 +19,14 @@ return new class extends Migration
             $table->longText('payload');
             $table->integer('last_activity')->index();
         });
+
+        Schema::connection('pgsql')->create('account.users', function (Blueprint $table) {
+            $table->id('user_id');
+            $table->string('email')->unique();
+            $table->string('display_name');
+            $table->string('password');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -27,5 +35,6 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('sessions');
+        Schema::connection('pgsql')->dropIfExists('account.users');
     }
 };

@@ -1,4 +1,5 @@
 @php
+
     require 'forms/profile.php';
 
     // Check if $post is set and is an array
@@ -14,9 +15,7 @@
         // Handle case where $post is not set or is not an array
         $displayName = 'Unknown User';
     }
-
 @endphp
-
 <html>
   
 <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
@@ -39,7 +38,7 @@
 
         <li><a href="{{route('weather')}}">Weather</a></li>
         <li>
-              @if($_SESSION['id'])
+              @if(session()->has('id'))
                   <div id="profile-dropdown-trigger">
                   <img id="navbar-profile-pic" src="https://www.gravatar.com/avatar/'.md5($result['email']).'?s=200" class="user-profile-image rounded-circle" title="Account"></div>
               

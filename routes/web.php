@@ -46,9 +46,9 @@ Route::get('/weather', function()
 Route::get('/sign-in', function()
 {
     return view('sign-in'); 
-})->name('sign-in');
+})->name('login');
 
-Route::post('/login', 'AuthController@login')->name('login'); // wala pa ni nahuman
+Route::get('/login', [AuthController::class, 'login']); // Handle the login form submission
 
 // Create_account
 Route::get('/sign-up', function()

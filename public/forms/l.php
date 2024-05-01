@@ -1,13 +1,13 @@
 <?php
-session_id();
-session_start();
+namespace App\Http\Controllers;
 
-require 'connect.php';
+use Illuminate\Http\Request;
+use App\Http\Middleware\CheckSession;
+use App\Models\User;
 
-if(isset($_SESSION['id']))
+if(session()->has('id'))
 {
-    header('Location: /user');
-    exit();
+    return redirect('user');
 }
 
 // Check if the form is submitted

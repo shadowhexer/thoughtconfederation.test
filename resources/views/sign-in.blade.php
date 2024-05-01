@@ -2,10 +2,9 @@
     session_id();
     session_start();
 
-    if(isset($_SESSION['id']))
+    if(session()->has('id'))
     {
-        header("Location: {{route('profile')}}");
-        exit();
+      return redirect()->route('profile');
     }
 @endphp
 
@@ -54,7 +53,7 @@ background-size: cover;">
           <div class="login-form" data-aos="fade-up" data-aos-duration="5000">
             <h4>Login with your account</h4>
 
-            <form action="{{route('login')}}" method="post">
+            <form action="{{route('login')}}" method="GET">
               @csrf
 
               <div class="row">

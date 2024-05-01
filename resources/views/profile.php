@@ -1,13 +1,13 @@
-<?php
-    session_id();
-    session_start();
+@php
 
-    $id = $_GET['user_id'];
+    $id = isMethod('get', 'user_id');
     require 'forms/user.php';
 
-    if(!isset($result['display_name'])) 
-    { header ('Location: index.html'); }
-?>
+    if(session()->has('id'))
+    {
+      return redirect()->route('profile');
+    }
+@endphp
 
 <!DOCTYPE html>
 <html lang="en">

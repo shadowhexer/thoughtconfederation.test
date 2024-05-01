@@ -18,7 +18,7 @@
 	header('Content-Type: application/json, charset=UTF-8');
 
 	$initial = "pgsql: host=localhost, port=5432, dbname = accounts_db";
-	$user = "postgres"; 
+	$user = "postgres";
 	$pass = "chelsea0710"; 
 
 	try
