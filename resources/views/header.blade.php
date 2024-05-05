@@ -15,7 +15,7 @@
         // Handle case where $post is not set or is not an array
         $displayName = 'Unknown User';
     }
-@endphp
+@endphp;
 <html>
   
 <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
@@ -46,7 +46,7 @@
                       <li>
                           <div class="sub-menu">
                               <div class="user-info">
-                                  <a href="/project/profile.php?user_id='.$result['user_id'].'" id="profile-link">
+                                  <a href="{{ route('profile?user_id='.$result['user_id']) }}" id="profile-link">
                                       <img id="profile-pic-dropdown" src="https://www.gravatar.com/avatar/'.md5($result['email']).'?s=200" class="nav-profile-img rounded-circle" alt="Profile">
                                       <h2>'.$result['display_name'].'</h2>
                                   </a>
@@ -66,9 +66,9 @@
                               </a>
                           </div>
                       </li>
-                  </ul>';
+                  </ul>
               @else
-               <a href="{{route('sign-in')}}" class="getstarted">Sign in</a> 
+               <a href="{{ route('sign-in') }}" class="getstarted">Sign in</a> 
               @endif
         </li>
     </ul>

@@ -1,8 +1,9 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
 
 // On first glance
 Route::any('/', function () {
@@ -57,7 +58,7 @@ Route::get('/sign-up', function()
 })->name('sign-up');
 
 // Timeline
-Route::get('/profile', function()
+Route::get('/profile', function(Request $request)
 {
-    return view('profile'); 
+    return view('profile?user_id='.$request->id); 
 })->name('profile');

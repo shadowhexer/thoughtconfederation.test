@@ -1,6 +1,4 @@
 @php
-    session_id();
-    session_start();
 
     if(session()->has('id'))
     {
